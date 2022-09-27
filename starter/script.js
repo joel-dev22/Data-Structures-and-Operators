@@ -28,6 +28,13 @@ const restaurant = {
   },
 };
 
-restaurant.numGuests = 0;
-const guest = restaurant.numGuests ?? 10;
-console.log(guest);
+// Short circuiting && and ||
+console.log(3 || 'Joel');
+console.log(undefined || 0 || 33 || 'Joel' || false);
+
+console.log(0 && 1);
+
+// Nullish Coallasing operator ?? ==== works based on nullish values " " and 0 are truthy values for ??
+// restaurant.numGuests = 0;
+// const guest = restaurant.numGuests ?? 10;
+// console.log(guest);
