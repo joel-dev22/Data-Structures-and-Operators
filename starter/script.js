@@ -27,3 +27,7 @@ const restaurant = {
     },
   },
 };
+
+restaurant.numGuests = 0;
+const guest = restaurant.numGuests ?? 10;
+console.log(guest);
