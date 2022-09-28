@@ -29,9 +29,9 @@ const restaurant = {
 };
 
 // Looping through objects
-for (const day of Object.keys(restaurant.openingHours)) console.log(day);
-console.log(Object.values(restaurant.openingHours));
-console.log(Object.entries(restaurant.openingHours));
+// for (const day of Object.keys(restaurant.openingHours)) console.log(day);
+// console.log(Object.values(restaurant.openingHours));
+// console.log(Object.entries(restaurant.openingHours));
 
 // Short circuiting && and ||
 // console.log(3 || 'Joel');
@@ -43,3 +43,18 @@ console.log(Object.entries(restaurant.openingHours));
 // restaurant.numGuests = 0;
 // const guest = restaurant.numGuests ?? 10;
 // console.log(guest);
+
+// Set = unique elements
+
+const orderSets = new Set([1, 2, 4, 2, 1, 1, 2, 4]);
+console.log(orderSets);
+console.log(orderSets.size);
+console.log(orderSets.has(1));
+console.log(orderSets.has(0));
+orderSets.add(6);
+console.log(orderSets);
+orderSets.delete(4);
+// orderSets.clear();
+console.log(orderSets);
+
+for (const order of orderSets) console.log(order);
