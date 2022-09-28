@@ -28,11 +28,16 @@ const restaurant = {
   },
 };
 
-// Short circuiting && and ||
-console.log(3 || 'Joel');
-console.log(undefined || 0 || 33 || 'Joel' || false);
+// Looping through objects
+for (const day of Object.keys(restaurant.openingHours)) console.log(day);
+console.log(Object.values(restaurant.openingHours));
+console.log(Object.entries(restaurant.openingHours));
 
-console.log(0 && 1);
+// Short circuiting && and ||
+// console.log(3 || 'Joel');
+// console.log(undefined || 0 || 33 || 'Joel' || false);
+
+// console.log(0 && 1);
 
 // Nullish Coallasing operator ?? ==== works based on nullish values " " and 0 are truthy values for ??
 // restaurant.numGuests = 0;
