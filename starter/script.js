@@ -28,6 +28,40 @@ const restaurant = {
   },
 };
 
-restaurant.numGuests = 0;
-const guest = restaurant.numGuests ?? 10;
-console.log(guest);
+// restaurant.numGuests = 0;
+// const guest = restaurant.numGuests ?? 10;
+// console.log(guest);
+
+// MAP
+
+// const rest = new Map();
+// rest.set('jole', 'india');
+
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'JAVA'],
+  [3, 'JAVASCRIPT'],
+  ['correct', 3],
+  [true, 'Correct'],
+  [false, 'Try again!!'],
+]);
+
+console.log(question.get('question'));
+
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`${key}: ${value}`);
+}
+
+const answer = Number(prompt('What is your answer?'));
+
+if (answer === 3) {
+  console.log(question.get(true));
+} else {
+  console.log(question.get(false));
+}
+
+// console.log(question);
+
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
